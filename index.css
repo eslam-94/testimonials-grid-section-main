@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+}
+main{
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+  display: grid;
+  grid-gap:25px;
+  grid-template-rows: auto repeat(2,275px) auto;
+  grid-template-columns: auto repeat(4,260px) auto;
+}
+div{
+  padding: 25px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 55px  auto;
+  align-items: center;
+}
+
+img{
+  width: 40px;
+  border-radius: 50%;
+  grid-area: 1/1/2/2;
+}
+h1{
+  grid-area: 2/1/3/3;
+  font-weight: 400;
+  font-size: 21px;
+  margin: 0;
+  color: hsl(0, 0%, 100%);
+}
+p{
+  grid-area: 3/1/4/3;
+  color: hsl(0, 0%, 81%);
+  line-height: 1.5;
+
+}
+span{
+  color: hsl(0, 0%, 81%);
+  opacity: 50%;
+}
+.name{
+  color: hsl(0, 0%, 100%);
+  line-height: normal;
+  grid-area: 1/2/2/3;
+  opacity: 70%;
+}
+.x{color: hsl(217, 19%, 35%);
+}
+.daniel {
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-position-x: 85%;
+  background-repeat: no-repeat;
+  grid-area: 2/2/3/4;
+  background-color: hsl(263, 55%, 52%);
+}
+
+.jonathan {
+  grid-area: 2/4/3/5;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.kira {
+  grid-area: 2/5/4/6;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.kira h1 {
+  color: hsl(217, 19%, 35%);
+}
+
+.jeanette {
+  grid-area: 3/2/4/3;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.jeanette h1 {
+  color: hsl(217, 19%, 35%);
+}
+
+.patrick {
+  grid-area: 3/3/4/5;
+  background-color: hsl(219, 29%, 14%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  grid-area: 4/1/5/7;
+  align-self: flex-end;
+  padding-bottom: 10px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:600px){
+  main{
+    height: auto;
+    grid-template-columns: auto 260px auto;
+    grid-template-rows: auto;
+  }
+  h1{
+    font-size: 19px;
+    margin: 10px 0;
+  }
+  p{
+  }
+  .daniel{
+    grid-area: 2/2/3/3;
+  }
+  .jonathan{
+    grid-area: 3/2/4/3;
+  }
+  .kira{
+    grid-area: 6/2/7/3;
+  }
+  .patrick{
+    grid-area: 5/2/6/3;
+  }
+  .jeanette{
+    grid-area: 4/2/5/3;
+  }
+  .attribution{
+    grid-area: 7/2/8/3;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/* Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+### Neutral
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%) */
